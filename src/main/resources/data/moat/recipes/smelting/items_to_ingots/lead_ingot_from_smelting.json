@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": [
+      {
+        "item": "moat:lead_pickaxe"
+      },
+      {
+        "item": "moat:lead_shovel"
+      },
+      {
+        "item": "moat:lead_axe"
+      },
+      {
+        "item": "moat:lead_hoe"
+      },
+      {
+        "item": "moat:lead_sword"
+      },
+      {
+        "item": "moat:lead_helmet"
+      },
+      {
+        "item": "moat:lead_chestplate"
+      },
+      {
+        "item": "moat:lead_leggings"
+      },
+      {
+        "item": "moat:lead_boots"
+      }
+    ],
+    "result": "moat:lead_ingot",
+    "experience": 0.1,
+    "cookingtime": 200
+  }

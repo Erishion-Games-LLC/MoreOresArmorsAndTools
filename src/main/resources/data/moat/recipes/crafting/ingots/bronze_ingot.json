@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "tt",
+      "tc"
+    ],
+    "key": {
+      "t": {
+        "tag": "forge/ingots/tin"
+      },
+      "c":{
+          "tag": "forge/ingots/copper"
+    }
+    },
+    "result": {
+      "item": "moat:bronze_ingot"
+    }
+  }

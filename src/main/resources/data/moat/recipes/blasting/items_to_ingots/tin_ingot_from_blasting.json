@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": [
+      {
+        "item": "moat:tin_pickaxe"
+      },
+      {
+        "item": "moat:tin_shovel"
+      },
+      {
+        "item": "moat:tin_axe"
+      },
+      {
+        "item": "moat:tin_hoe"
+      },
+      {
+        "item": "moat:tin_sword"
+      },
+      {
+        "item": "moat:tin_helmet"
+      },
+      {
+        "item": "moat:tin_chestplate"
+      },
+      {
+        "item": "moat:tin_leggings"
+      },
+      {
+        "item": "moat:tin_boots"
+      }
+    ],
+    "result": "moat:tin_ingot",
+    "experience": 0.1,
+    "cookingtime": 100
+  }

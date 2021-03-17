@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "moat:copper_block"
+  },
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "tag": "forge:ingots/copper"
+    }
+  }
+}
