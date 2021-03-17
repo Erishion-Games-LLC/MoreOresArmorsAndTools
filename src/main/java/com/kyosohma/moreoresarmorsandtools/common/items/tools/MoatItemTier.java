@@ -12,10 +12,9 @@ public enum MoatItemTier implements IItemTier {
     COPPER(1, 200, 5.0F, 0.0F, 8, () -> {return Ingredient.fromItems(ItemInit.COPPER_INGOT.get());}),
     BRONZE(2, 600, 8.0F, 0.0F, 12, () -> {return Ingredient.fromItems(ItemInit.BRONZE_INGOT.get());}),
     STEEL(2, 900, 7.0F, 0.0F, 13, () -> {return Ingredient.fromItems(ItemInit.STEEL_INGOT.get());}),
-    SILVER(2, 400, 7.0F, 0.0F, 20, () -> {return Ingredient.fromItems(ItemInit.SILVER_INGOT.get());}),
+    SILVER(2, 400, 9.0F, 0.0F, 23, () -> {return Ingredient.fromItems(ItemInit.SILVER_INGOT.get());}),
     LEAD(3, 1800, 7.0F, 0.0F, 6, () -> {return Ingredient.fromItems(ItemInit.LEAD_INGOT.get());}),
-    PLATINUM(3, 1000, 8.0F, 0.0F, 16, () -> {return Ingredient.fromItems(ItemInit.PLATINUM_INGOT.get());});
-
+    PLATINUM(3, 1000, 8.0F, 0.0F, 18, () -> {return Ingredient.fromItems(ItemInit.PLATINUM_INGOT.get());});
 
     private final int harvestLevel;
     private final int maxUses;

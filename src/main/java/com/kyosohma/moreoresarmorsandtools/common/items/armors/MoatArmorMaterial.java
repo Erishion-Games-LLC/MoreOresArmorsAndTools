@@ -14,13 +14,13 @@ import java.util.function.Supplier;
 
 public enum MoatArmorMaterial implements IArmorMaterial {
 
-    TIN(MoreOresArmorsAndTools.MOD_ID + ":tin", 11, new int[] { 2, 4, 5, 1}, 7, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> { return Ingredient.fromItems(ItemInit.TIN_INGOT.get());}, 0),
-    COPPER(MoreOresArmorsAndTools.MOD_ID + ":copper", 11, new int[] { 2, 4, 5, 1}, 7, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> { return Ingredient.fromItems(ItemInit.TIN_INGOT.get());}, 0),
-    BRONZE(MoreOresArmorsAndTools.MOD_ID + ":bronze", 20, new int[] { 2, 5, 6, 2}, 7, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> { return Ingredient.fromItems(ItemInit.TIN_INGOT.get());}, 0),
-    STEEL(MoreOresArmorsAndTools.MOD_ID + ":steel", 25, new int[] { 2, 5, 7, 2}, 7, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> { return Ingredient.fromItems(ItemInit.TIN_INGOT.get());}, 0),
-    SILVER(MoreOresArmorsAndTools.MOD_ID + ":silver", 17, new int[] { 2, 5, 7, 2}, 7, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> { return Ingredient.fromItems(ItemInit.TIN_INGOT.get());}, 0),
-    LEAD(MoreOresArmorsAndTools.MOD_ID + ":lead", 37, new int[] { 3, 6, 8, 3}, 7, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.5F, () -> { return Ingredient.fromItems(ItemInit.TIN_INGOT.get());}, 1),
-    PLATINUM(MoreOresArmorsAndTools.MOD_ID + ":platinum", 27, new int[] { 3, 6, 8, 3}, 7, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F, () -> { return Ingredient.fromItems(ItemInit.TIN_INGOT.get());}, 0);
+    TIN(MoreOresArmorsAndTools.MOD_ID + ":tin", 11, new int[] { 2, 4, 5, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> { return Ingredient.fromItems(ItemInit.TIN_INGOT.get());}, 0),
+    COPPER(MoreOresArmorsAndTools.MOD_ID + ":copper", 11, new int[] { 2, 4, 5, 1}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, () -> { return Ingredient.fromItems(ItemInit.COPPER_INGOT.get());}, 0),
+    BRONZE(MoreOresArmorsAndTools.MOD_ID + ":bronze", 20, new int[] { 2, 5, 6, 2}, 7, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, () -> { return Ingredient.fromItems(ItemInit.BRONZE_INGOT.get());}, 0),
+    STEEL(MoreOresArmorsAndTools.MOD_ID + ":steel", 25, new int[] { 2, 5, 7, 2}, 8, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0F, () -> { return Ingredient.fromItems(ItemInit.STEEL_INGOT.get());}, 0),
+    SILVER(MoreOresArmorsAndTools.MOD_ID + ":silver", 17, new int[] { 2, 5, 7, 2}, 23, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.5F, () -> { return Ingredient.fromItems(ItemInit.SILVER_INGOT.get());}, 0),
+    LEAD(MoreOresArmorsAndTools.MOD_ID + ":lead", 37, new int[] { 3, 6, 8, 3}, 6, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.5F, () -> { return Ingredient.fromItems(ItemInit.LEAD_INGOT.get());}, 1),
+    PLATINUM(MoreOresArmorsAndTools.MOD_ID + ":platinum", 27, new int[] { 3, 6, 8, 3}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.0F, () -> { return Ingredient.fromItems(ItemInit.PLATINUM_INGOT.get());}, 0);
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] { 11, 16, 15, 13};
     private final String name;
