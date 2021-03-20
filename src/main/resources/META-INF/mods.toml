@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/KyoSohma/MoreOresArmorsAndTools/issues" #opt
 
 [[mods]] #mandatory
 modId="moat" #mandatory
-version="1.16.5-1.2.0" #mandatory
+version="1.16.5-1.2.1" #mandatory
 displayName="More Ores Armors and Tools" #mandatory
 displayURL="https://www.curseforge.com/minecraft/mc-mods/more-ores-armors-and-tools" #optional
 logoFile="logo.png" #optional
