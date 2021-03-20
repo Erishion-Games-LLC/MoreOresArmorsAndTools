@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "moat:tin_ingot",
+    "moat:copper_ingot",
+    "moat:bronze_ingot",
+    "moat:steel_ingot",
+    "moat:silver_ingot",
+    "moat:lead_ingot",
+    "moat:platinum_ingot"
+  ]
+}

@@ -6,10 +6,10 @@
     ],
     "key": {
       "t": {
-        "tag": "forge/ingots/tin"
+        "tag": "forge:ingots/tin"
       },
-      "c":{
-          "tag": "forge/ingots/copper"
+      "c": {
+          "tag": "forge:ingots/copper"
     }
     },
     "result": {

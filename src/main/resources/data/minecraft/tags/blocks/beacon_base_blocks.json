@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "moat:tin_block",
+    "moat:copper_block",
+    "moat:bronze_block",
+    "moat:steel_block",
+    "moat:silver_block",
+    "moat:lead_block",
+    "moat:platinum_block"
+  ]
+}

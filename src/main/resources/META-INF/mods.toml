@@ -5,12 +5,12 @@ issueTrackerURL="https://github.com/KyoSohma/MoreOresArmorsAndTools/issues" #opt
 
 [[mods]] #mandatory
 modId="moat" #mandatory
-version="1.16.5-1.1.0" #mandatory
+version="1.16.5-1.2.0" #mandatory
 displayName="More Ores Armors and Tools" #mandatory
 displayURL="https://www.curseforge.com/minecraft/mc-mods/more-ores-armors-and-tools" #optional
 logoFile="logo.png" #optional
 credits="TurtyWurty and TechnoVision for the tutorials" #optional
 authors="Kyosohma" #optional
 description='''
-Adds 5 new ores and seven new ingots/blocks, tool sets, and armor sets. Includes Tin, Copper, Bronze, Steel, Silver, Lead, and Platinum.
+Adds five new ores and seven new ingots/blocks, tool sets, and armor sets. Includes Tin, Copper, Bronze, Steel, Silver, Lead, and Platinum.
 '''
