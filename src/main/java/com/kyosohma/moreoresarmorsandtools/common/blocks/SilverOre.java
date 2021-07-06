@@ -1,9 +1,11 @@
-package com.kyosohma.moreoresarmorsandtools.common.blocks;
+package com.kyosohma.MoreOresArmorsAndTools.common.blocks;
 
 import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.common.ToolType;
+
+import net.minecraft.block.AbstractBlock.Properties;
 
 public class SilverOre extends OreBlock {
     public SilverOre() {

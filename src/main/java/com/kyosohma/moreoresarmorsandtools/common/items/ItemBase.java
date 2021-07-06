@@ -1,6 +1,6 @@
-package com.kyosohma.moreoresarmorsandtools.common.items;
+package com.kyosohma.MoreOresArmorsAndTools.common.items;
 
-import com.kyosohma.moreoresarmorsandtools.MoreOresArmorsAndTools;
+import com.kyosohma.MoreOresArmorsAndTools.MoreOresArmorsAndTools;
 import net.minecraft.item.Item;
 
 public class ItemBase extends Item {

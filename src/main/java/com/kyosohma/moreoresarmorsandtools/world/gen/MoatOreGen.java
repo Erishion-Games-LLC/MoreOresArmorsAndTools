@@ -1,6 +1,7 @@
-package com.kyosohma.moreoresarmorsandtools.world.gen;
+package com.kyosohma.MoreOresArmorsAndTools.world.gen;
 
-import com.kyosohma.moreoresarmorsandtools.core.init.BlockInit;
+import com.kyosohma.MoreOresArmorsAndTools.config.OreGenConfig;
+import com.kyosohma.MoreOresArmorsAndTools.core.init.BlockInit;
 import net.minecraft.block.BlockState;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
@@ -15,21 +16,32 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 public class MoatOreGen {
 
     public static void generateOres(final BiomeLoadingEvent event) {
-        //                                                                                                                                              13          0           63                  20
-        //                                                                                                                                              10          1           16                  1
-        if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.TIN_ORE.get().getDefaultState(), 14, 0, 90, 22);
+
+    public final int ONLY_OVERWORLD= (!(event.getCategory().equals(Biome.Category.NETHER) && event.getCategory().equals(Biome.Category.THEEND)));
+
+        if((OreGenConfig.GENERATE_TIN.get()) && ONLY_OVERWORLD)
+        {
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.TIN_ORE.get()
+                    .getDefaultState(), OreGenConfig.tin_vein_size.get(), OreGenConfig.tin_min_height.get(), OreGenConfig.tin_max_height.get(), OreGenConfig.tin_per_chunk.get());
         }
-        if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
-            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.COPPER_ORE.get().getDefaultState(), 14, 0, 90, 22);
+
+
+
+
+        if((OreGenConfig.generate_copper.get()) && (!(event.getCategory().equals(Biome.Category.NETHER) && event.getCategory().equals(Biome.Category.THEEND))))
+        {
+            generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.COPPER_ORE.get().getDefaultState(), OreGenConfig.copper_vein_size.get(), OreGenConfig.copper_min_height.get(), OreGenConfig.copper_max_height.get(), OreGenConfig.copper_per_chunk.get());
         }
-        if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
+        if((OreGenConfig.generate_silver.get()) && (!(event.getCategory().equals(Biome.Category.NETHER) && event.getCategory().equals(Biome.Category.THEEND))))
+        {
             generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.SILVER_ORE.get().getDefaultState(), 13, 0, 45, 2);
         }
-        if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
+        if((OreGenConfig.generate_lead.get()) && (!(event.getCategory().equals(Biome.Category.NETHER) && event.getCategory().equals(Biome.Category.THEEND))))
+        {
             generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.LEAD_ORE.get().getDefaultState(), 11, 0, 30, 1);
         }
-        if(!(event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND))) {
+        if((OreGenConfig.generate_platinum.get()) && (!(event.getCategory().equals(Biome.Category.NETHER) && event.getCategory().equals(Biome.Category.THEEND))))
+        {
             generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.PLATINUM_ORE.get().getDefaultState(), 11, 0, 30, 1);
         }
     }
@@ -37,7 +49,6 @@ public class MoatOreGen {
         settings.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
                 Feature.ORE.withConfiguration(new OreFeatureConfig(fillerType, state, veinSize))
                         .withPlacement(Placement.RANGE.configure(new TopSolidRangeConfig(minHeight, 0, maxHeight)))
-                        .square().func_242731_b(amountPerChunk));
+                        .square().count(amountPerChunk));
     }
 }
-

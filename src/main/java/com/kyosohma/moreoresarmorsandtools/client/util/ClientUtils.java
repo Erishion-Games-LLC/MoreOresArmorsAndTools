@@ -1,4 +1,4 @@
-package com.kyosohma.moreoresarmorsandtools.client.util;
+package com.kyosohma.MoreOresArmorsAndTools.client.util;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;

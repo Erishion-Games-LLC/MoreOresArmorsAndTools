@@ -1,10 +1,10 @@
-package com.kyosohma.moreoresarmorsandtools.core.init;
+package com.kyosohma.MoreOresArmorsAndTools.core.init;
 
-import com.kyosohma.moreoresarmorsandtools.MoreOresArmorsAndTools;
-import com.kyosohma.moreoresarmorsandtools.common.blocks.BlockItemBase;
-import com.kyosohma.moreoresarmorsandtools.common.items.ItemBase;
-import com.kyosohma.moreoresarmorsandtools.common.items.armors.MoatArmorMaterial;
-import com.kyosohma.moreoresarmorsandtools.common.items.tools.MoatItemTier;
+import com.kyosohma.MoreOresArmorsAndTools.MoreOresArmorsAndTools;
+import com.kyosohma.MoreOresArmorsAndTools.common.blocks.BlockItemBase;
+import com.kyosohma.MoreOresArmorsAndTools.common.items.ItemBase;
+import com.kyosohma.MoreOresArmorsAndTools.common.items.armors.MoatArmorMaterial;
+import com.kyosohma.MoreOresArmorsAndTools.common.items.tools.MoatItemTier;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
@@ -14,7 +14,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ItemInit {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreOresArmorsAndTools.MOD_ID);
-
     //Ingots
     public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot", ItemBase::new);
     public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", ItemBase::new);
@@ -51,7 +50,7 @@ public class ItemInit {
     public static final RegistryObject<SwordItem> BRONZE_SWORD = ITEMS.register("bronze_sword", () -> new SwordItem(MoatItemTier.BRONZE, 5, -2.4F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<SwordItem> STEEL_SWORD = ITEMS.register("steel_sword", () -> new SwordItem(MoatItemTier.STEEL, 5, -2.4F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<SwordItem> SILVER_SWORD = ITEMS.register("silver_sword", () -> new SwordItem(MoatItemTier.SILVER, 5, -2.4F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
-    public static final RegistryObject<SwordItem> LEAD_SWORD = ITEMS.register("lead_sword", () -> new SwordItem(MoatItemTier.LEAD, 5, -2.4F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
+    public static final RegistryObject<SwordItem> LEAD_SWORD = ITEMS.register("lead_sword", () -> new SwordItem(MoatItemTier.LEAD, 5, -3.2F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<SwordItem> PLATINUM_SWORD = ITEMS.register("platinum_sword", () -> new SwordItem(MoatItemTier.PLATINUM, 6, -2.4F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     //Tools/Pickaxes
     public static final RegistryObject<PickaxeItem> TIN_PICKAXE = ITEMS.register("tin_pickaxe", () -> new PickaxeItem(MoatItemTier.TIN, 2, -2.8F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
@@ -59,7 +58,7 @@ public class ItemInit {
     public static final RegistryObject<PickaxeItem> BRONZE_PICKAXE = ITEMS.register("bronze_pickaxe", () -> new PickaxeItem(MoatItemTier.BRONZE, 3, -2.8F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<PickaxeItem> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () -> new PickaxeItem(MoatItemTier.STEEL, 3, -2.8F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<PickaxeItem> SILVER_PICKAXE = ITEMS.register("silver_pickaxe", () -> new PickaxeItem(MoatItemTier.SILVER, 3, -2.8F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
-    public static final RegistryObject<PickaxeItem> LEAD_PICKAXE = ITEMS.register("lead_pickaxe", () -> new PickaxeItem(MoatItemTier.LEAD, 3, -2.8F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
+    public static final RegistryObject<PickaxeItem> LEAD_PICKAXE = ITEMS.register("lead_pickaxe", () -> new PickaxeItem(MoatItemTier.LEAD, 3, -3.6F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<PickaxeItem> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe", () -> new PickaxeItem(MoatItemTier.PLATINUM, 4, -2.8F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     //Tools/Axes
     public static final RegistryObject<AxeItem> TIN_AXE = ITEMS.register("tin_axe", () -> new AxeItem(MoatItemTier.TIN, 8, -3.2F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
@@ -67,7 +66,7 @@ public class ItemInit {
     public static final RegistryObject<AxeItem> BRONZE_AXE = ITEMS.register("bronze_axe", () -> new AxeItem(MoatItemTier.BRONZE, 8, -3.1F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<AxeItem> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(MoatItemTier.STEEL, 8, -3.1F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<AxeItem> SILVER_AXE = ITEMS.register("silver_axe", () -> new AxeItem(MoatItemTier.SILVER, 8, -3.1F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
-    public static final RegistryObject<AxeItem> LEAD_AXE = ITEMS.register("lead_axe", () -> new AxeItem(MoatItemTier.LEAD, 8, -3.1F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
+    public static final RegistryObject<AxeItem> LEAD_AXE = ITEMS.register("lead_axe", () -> new AxeItem(MoatItemTier.LEAD, 8, -3.9F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<AxeItem> PLATINUM_AXE = ITEMS.register("platinum_axe", () -> new AxeItem(MoatItemTier.PLATINUM, 8, -3.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     //Tools/Shovels
     public static final RegistryObject<ShovelItem> TIN_SHOVEL = ITEMS.register("tin_shovel", () -> new ShovelItem(MoatItemTier.TIN, 3, -3.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
@@ -75,7 +74,7 @@ public class ItemInit {
     public static final RegistryObject<ShovelItem> BRONZE_SHOVEL = ITEMS.register("bronze_shovel", () -> new ShovelItem(MoatItemTier.BRONZE, 4, -3.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<ShovelItem> STEEL_SHOVEL = ITEMS.register("steel_shovel", () -> new ShovelItem(MoatItemTier.STEEL, 4, -3.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<ShovelItem> SILVER_SHOVEL = ITEMS.register("silver_shovel", () -> new ShovelItem(MoatItemTier.SILVER, 4, -3.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
-    public static final RegistryObject<ShovelItem> LEAD_SHOVEL = ITEMS.register("lead_shovel", () -> new ShovelItem(MoatItemTier.LEAD, 4, -3.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
+    public static final RegistryObject<ShovelItem> LEAD_SHOVEL = ITEMS.register("lead_shovel", () -> new ShovelItem(MoatItemTier.LEAD, 4, -3.8F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<ShovelItem> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel", () -> new ShovelItem(MoatItemTier.PLATINUM, 5, -3.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     //Tools/Hoes
     public static final RegistryObject<HoeItem> TIN_HOE  = ITEMS.register("tin_hoe", () -> new HoeItem(MoatItemTier.TIN, 0, -2.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
@@ -83,8 +82,16 @@ public class ItemInit {
     public static final RegistryObject<HoeItem> BRONZE_HOE  = ITEMS.register("bronze_hoe", () -> new HoeItem(MoatItemTier.BRONZE, 0, -1.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<HoeItem> STEEL_HOE  = ITEMS.register("steel_hoe", () -> new HoeItem(MoatItemTier.STEEL, 0, -1.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<HoeItem> SILVER_HOE  = ITEMS.register("silver_hoe", () -> new HoeItem(MoatItemTier.SILVER, 0, -1.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
-    public static final RegistryObject<HoeItem> LEAD_HOE  = ITEMS.register("lead_hoe", () -> new HoeItem(MoatItemTier.LEAD, 0, -1.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
+    public static final RegistryObject<HoeItem> LEAD_HOE  = ITEMS.register("lead_hoe", () -> new HoeItem(MoatItemTier.LEAD, 0, -1.8F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<HoeItem> PLATINUM_HOE  = ITEMS.register("platinum_hoe", () -> new HoeItem(MoatItemTier.PLATINUM, 0, 0.0F, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
+    //Armor/Horse
+    public static final RegistryObject<HorseArmorItem> TIN_HORSE_ARMOR = ITEMS.register("tin_horse_armor", () -> new HorseArmorItem(4,"iron", (new Item.Properties().maxStackSize(1).group(MoreOresArmorsAndTools.TAB))));
+    public static final RegistryObject<HorseArmorItem> COPPER_HORSE_ARMOR = ITEMS.register("copper_horse_armor", () -> new HorseArmorItem(4,"iron", (new Item.Properties().maxStackSize(1).group(MoreOresArmorsAndTools.TAB))));
+    public static final RegistryObject<HorseArmorItem> BRONZE_HORSE_ARMOR = ITEMS.register("bronze_horse_armor", () -> new HorseArmorItem(5,"iron", (new Item.Properties().maxStackSize(1).group(MoreOresArmorsAndTools.TAB))));
+    public static final RegistryObject<HorseArmorItem> STEEL_HORSE_ARMOR = ITEMS.register("steel_horse_armor", () -> new HorseArmorItem(9,"iron", (new Item.Properties().maxStackSize(1).group(MoreOresArmorsAndTools.TAB))));
+    public static final RegistryObject<HorseArmorItem> SILVER_HORSE_ARMOR = ITEMS.register("silver_horse_armor", () -> new HorseArmorItem(5,"gold", (new Item.Properties().maxStackSize(1).group(MoreOresArmorsAndTools.TAB))));
+    public static final RegistryObject<HorseArmorItem> LEAD_HORSE_ARMOR = ITEMS.register("lead_horse_armor", () -> new HorseArmorItem(11,"diamond", (new Item.Properties().maxStackSize(1).group(MoreOresArmorsAndTools.TAB))));
+    public static final RegistryObject<HorseArmorItem> PLATINUM_HORSE_ARMOR = ITEMS.register("platinum_horse_armor", () -> new HorseArmorItem(11,"diamond", (new Item.Properties().maxStackSize(1).group(MoreOresArmorsAndTools.TAB))));
     //Armor/Helmet
     public static final RegistryObject<ArmorItem> TIN_HELMET = ITEMS.register("tin_helmet", () -> new ArmorItem(MoatArmorMaterial.TIN, EquipmentSlotType.HEAD, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));
     public static final RegistryObject<ArmorItem> COPPER_HELMET = ITEMS.register("copper_helmet", () -> new ArmorItem(MoatArmorMaterial.COPPER, EquipmentSlotType.HEAD, new Item.Properties().group(MoreOresArmorsAndTools.TAB)));

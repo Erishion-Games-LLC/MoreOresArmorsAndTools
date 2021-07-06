@@ -1,16 +1,20 @@
-package com.kyosohma.moreoresarmorsandtools;
+package com.kyosohma.MoreOresArmorsAndTools;
 
-import com.kyosohma.moreoresarmorsandtools.core.init.BlockInit;
-import com.kyosohma.moreoresarmorsandtools.core.init.ItemInit;
-import com.kyosohma.moreoresarmorsandtools.world.gen.MoatOreGen;
+import com.kyosohma.MoreOresArmorsAndTools.config.Config;
+import com.kyosohma.MoreOresArmorsAndTools.core.init.BlockInit;
+import com.kyosohma.MoreOresArmorsAndTools.core.init.ItemInit;
+import com.kyosohma.MoreOresArmorsAndTools.world.gen.MoatOreGen;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -23,6 +27,12 @@ public class MoreOresArmorsAndTools {
     public MoreOresArmorsAndTools() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(this::setup);
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.server_config);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.client_config);
+
+        Config.loadConfig(Config.client_config, FMLPaths.CONFIGDIR.get().resolve("MoreOresArmorsAndTools-client.toml").toString());
+        Config.loadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("MoreOresArmorsAndTools-server.toml").toString());
 
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);

@@ -1,6 +1,6 @@
-package com.kyosohma.moreoresarmorsandtools.common.items.tools;
+package com.kyosohma.MoreOresArmorsAndTools.common.items.tools;
 
-import com.kyosohma.moreoresarmorsandtools.core.init.ItemInit;
+import com.kyosohma.MoreOresArmorsAndTools.core.init.ItemInit;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 

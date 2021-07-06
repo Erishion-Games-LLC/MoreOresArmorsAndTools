@@ -1,12 +1,11 @@
-package com.kyosohma.moreoresarmorsandtools.common.blocks;
+package com.kyosohma.MoreOresArmorsAndTools.common.blocks;
 
-import com.kyosohma.moreoresarmorsandtools.MoreOresArmorsAndTools;
+import com.kyosohma.MoreOresArmorsAndTools.MoreOresArmorsAndTools;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 
 public class BlockItemBase extends BlockItem {
     public BlockItemBase(Block block) {
-        super(block, new Item.Properties().group(MoreOresArmorsAndTools.TAB));
+        super(block, new Properties().group(MoreOresArmorsAndTools.TAB));
     }
 }

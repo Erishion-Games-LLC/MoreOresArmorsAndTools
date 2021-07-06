@@ -1,4 +1,4 @@
-package com.kyosohma.moreoresarmorsandtools.common.blocks;
+package com.kyosohma.MoreOresArmorsAndTools.common.blocks;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;

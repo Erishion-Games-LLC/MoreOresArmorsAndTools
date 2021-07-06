@@ -1,7 +1,7 @@
-package com.kyosohma.moreoresarmorsandtools.common.items.armors;
+package com.kyosohma.MoreOresArmorsAndTools.common.items.armors;
 
-import com.kyosohma.moreoresarmorsandtools.MoreOresArmorsAndTools;
-import com.kyosohma.moreoresarmorsandtools.core.init.ItemInit;
+import com.kyosohma.MoreOresArmorsAndTools.MoreOresArmorsAndTools;
+import com.kyosohma.MoreOresArmorsAndTools.core.init.ItemInit;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
