@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "moat:block/lead_block" }
+  }
+}
