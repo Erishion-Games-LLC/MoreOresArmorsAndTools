@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "moat:items/bronze_hoe"
+    "layer0": "moat:item/bronze_hoe"
   }
 }

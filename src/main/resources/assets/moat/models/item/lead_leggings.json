@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "moat:items/lead_leggings"
+    "layer0": "moat:item/lead_leggings"
   }
 }

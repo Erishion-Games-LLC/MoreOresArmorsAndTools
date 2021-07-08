@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moat:blocks/copper_block"
+    "all": "moat:block/copper_block"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "moat:items/platinum_axe"
+    "layer0": "moat:item/platinum_axe"
   }
 }

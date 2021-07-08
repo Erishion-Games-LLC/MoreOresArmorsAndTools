@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "moat:items/bronze_sword"
+    "layer0": "moat:item/bronze_sword"
   }
 }

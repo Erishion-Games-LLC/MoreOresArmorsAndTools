@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moat:blocks/lead_ore"
+    "all": "moat:block/lead_ore"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "moat:blocks/silver_ore"
+    "all": "moat:block/silver_ore"
   }
 }
