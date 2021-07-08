@@ -1,16 +1,29 @@
-modLoader="javafml" #mandatory
-loaderVersion="[35,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+modLoader="javafml"
+loaderVersion="[36,)"
 license="GNU General Public License v3.0"
-issueTrackerURL="https://github.com/KyoSohma/MoreOresArmorsAndTools/issues" #optional
+issueTrackerURL="https://github.com/KyoSohma/MoreOresArmorsAndTools/issues"
 
-[[mods]] #mandatory
-modId="moat" #mandatory
-version="1.16.5-1.2.5" #mandatory
-displayName="More Ores Armors and Tools" #mandatory
-displayURL="https://www.curseforge.com/minecraft/mc-mods/more-ores-armors-and-tools" #optional
-logoFile="logo.png" #optional
-credits="TurtyWurty and TechnoVision for the tutorials" #optional
-authors="Kyosohma" #optional
-description='''
+[[mods]]
+    modId="moat"
+    version="${file.jarVersion}"
+    displayName="More Ores Armors and Tools"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/more-ores-armors-and-tools"
+    logoFile="logo.png"
+    credits="TurtyWurty and TechnoVision for the tutorials"
+    authors="Kyosohma"
+    description='''
 Adds five new ores and seven new ingots/blocks, tool sets, and armor sets. Includes Tin, Copper, Bronze, Steel, Silver, Lead, and Platinum.
-'''
+    '''
+
+[[dependencies.moat]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.moat]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
