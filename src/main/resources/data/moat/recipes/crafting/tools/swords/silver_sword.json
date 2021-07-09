@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "X",
-      "X",
-      "#"
-    ],
-    "key": {
-      "#": {
-        "tag": "forge:rods/wooden"
-      },
-      "X": {
-        "tag": "forge:ingots/silver"
-      }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
     },
-    "result": {
-      "item": "moat:silver_sword"
+    "X": {
+      "tag": "forge:ingots/silver"
     }
+  },
+  "result": {
+    "item": "moat:silver_sword"
   }
+}

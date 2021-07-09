@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "moat:block/copper_block" }
+    "": {
+      "model": "moat:block/copper_block"
+    }
   }
 }

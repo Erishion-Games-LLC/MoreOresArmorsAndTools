@@ -1,35 +1,35 @@
 {
-    "type": "minecraft:blasting",
-    "ingredient": [
-      {
-        "item": "moat:steel_pickaxe"
-      },
-      {
-        "item": "moat:steel_shovel"
-      },
-      {
-        "item": "moat:steel_axe"
-      },
-      {
-        "item": "moat:steel_hoe"
-      },
-      {
-        "item": "moat:steel_sword"
-      },
-      {
-        "item": "moat:steel_helmet"
-      },
-      {
-        "item": "moat:steel_chestplate"
-      },
-      {
-        "item": "moat:steel_leggings"
-      },
-      {
-        "item": "moat:steel_boots"
-      }
-    ],
-    "result": "moat:steel_ingot",
-    "experience": 0.1,
-    "cookingtime": 100
-  }
+  "type": "minecraft:blasting",
+  "ingredient": [
+    {
+      "item": "moat:steel_pickaxe"
+    },
+    {
+      "item": "moat:steel_shovel"
+    },
+    {
+      "item": "moat:steel_axe"
+    },
+    {
+      "item": "moat:steel_hoe"
+    },
+    {
+      "item": "moat:steel_sword"
+    },
+    {
+      "item": "moat:steel_helmet"
+    },
+    {
+      "item": "moat:steel_chestplate"
+    },
+    {
+      "item": "moat:steel_leggings"
+    },
+    {
+      "item": "moat:steel_boots"
+    }
+  ],
+  "result": "moat:steel_ingot",
+  "experience": 0.1,
+  "cookingtime": 100
+}

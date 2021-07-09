@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "moat:block/platinum_ore" }
+    "": {
+      "model": "moat:block/platinum_ore"
+    }
   }
 }

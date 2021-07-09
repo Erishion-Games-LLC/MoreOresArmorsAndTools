@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "moat:block/lead_ore" }
+    "": {
+      "model": "moat:block/lead_ore"
+    }
   }
 }

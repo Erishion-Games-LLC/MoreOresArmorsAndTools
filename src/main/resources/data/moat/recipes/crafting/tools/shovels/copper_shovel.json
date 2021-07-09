@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "X",
-      "#",
-      "#"
-    ],
-    "key": {
-      "#": {
-        "tag": "forge:rods/wooden"
-      },
-      "X": {
-        "tag": "forge:ingots/copper"
-      }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
     },
-    "result": {
-      "item": "moat:copper_shovel"
+    "X": {
+      "tag": "forge:ingots/copper"
     }
+  },
+  "result": {
+    "item": "moat:copper_shovel"
   }
+}

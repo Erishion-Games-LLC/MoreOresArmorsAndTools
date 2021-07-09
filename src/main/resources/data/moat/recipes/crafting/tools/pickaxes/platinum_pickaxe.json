@@ -1,19 +1,19 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "XXX",
-      " # ",
-      " # "
-    ],
-    "key": {
-      "#": {
-        "tag": "forge:rods/wooden"
-      },
-      "X": {
-        "tag": "forge:ingots/platinum"
-      }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
     },
-    "result": {
-      "item": "moat:platinum_pickaxe"
+    "X": {
+      "tag": "forge:ingots/platinum"
     }
+  },
+  "result": {
+    "item": "moat:platinum_pickaxe"
   }
+}

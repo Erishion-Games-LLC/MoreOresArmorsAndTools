@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "moat:block/silver_block" }
+    "": {
+      "model": "moat:block/silver_block"
+    }
   }
 }

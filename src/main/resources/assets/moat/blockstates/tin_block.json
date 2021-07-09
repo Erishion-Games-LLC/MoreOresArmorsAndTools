@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "moat:block/tin_block" }
+    "": {
+      "model": "moat:block/tin_block"
+    }
   }
 }

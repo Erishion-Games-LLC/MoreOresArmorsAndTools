@@ -1,18 +1,18 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-      "cc",
-      "ct"
-    ],
-    "key": {
-      "t": {
-        "tag": "forge:ingots/tin"
-      },
-      "c": {
-          "tag": "forge:ingots/copper"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cc",
+    "ct"
+  ],
+  "key": {
+    "t": {
+      "tag": "forge:ingots/tin"
     },
-    "result": {
-      "item": "moat:bronze_ingot"
+    "c": {
+      "tag": "forge:ingots/copper"
     }
+  },
+  "result": {
+    "item": "moat:bronze_ingot"
   }
+}
