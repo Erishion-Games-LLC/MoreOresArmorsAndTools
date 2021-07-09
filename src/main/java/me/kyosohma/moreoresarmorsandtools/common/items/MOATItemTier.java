@@ -8,64 +8,64 @@ import java.util.function.Supplier;
 
 public enum MOATItemTier implements IItemTier
 {
-    TIN(1, 200, 5.0F, 0.0F, 8, () -> Ingredient.fromTag(MOATTags.TIN_INGOTS)),
-    COPPER(1, 200, 5.0F, 0.0F, 8, () -> Ingredient.fromTag(MOATTags.COPPER_INGOTS)),
-    BRONZE(2, 600, 8.0F, 0.0F, 12, () -> Ingredient.fromTag(MOATTags.BRONZE_INGOTS)),
-    STEEL(2, 900, 7.0F, 0.0F, 13, () -> Ingredient.fromTag(MOATTags.STEEL_INGOTS)),
-    SILVER(2, 400, 9.0F, 0.0F, 23, () -> Ingredient.fromTag(MOATTags.SILVER_INGOTS)),
-    LEAD(3, 1800, 7.0F, 0.0F, 6, () -> Ingredient.fromTag(MOATTags.LEAD_INGOTS)),
-    PLATINUM(3, 1000, 8.0F, 0.0F, 18, () -> Ingredient.fromTag(MOATTags.PLATINUM_INGOTS));
+    TIN(1, 200, 5.0F, 0.0F, 8, () -> Ingredient.of(MOATTags.TIN_INGOTS)),
+    COPPER(1, 200, 5.0F, 0.0F, 8, () -> Ingredient.of(MOATTags.COPPER_INGOTS)),
+    BRONZE(2, 600, 8.0F, 0.0F, 12, () -> Ingredient.of(MOATTags.BRONZE_INGOTS)),
+    STEEL(2, 900, 7.0F, 0.0F, 13, () -> Ingredient.of(MOATTags.STEEL_INGOTS)),
+    SILVER(2, 400, 9.0F, 0.0F, 23, () -> Ingredient.of(MOATTags.SILVER_INGOTS)),
+    LEAD(3, 1800, 7.0F, 0.0F, 6, () -> Ingredient.of(MOATTags.LEAD_INGOTS)),
+    PLATINUM(3, 1000, 8.0F, 0.0F, 18, () -> Ingredient.of(MOATTags.PLATINUM_INGOTS));
 
-    private final int harvestLevel;
-    private final int maxUses;
-    private final float efficiency;
-    private final float attackDamage;
-    private final int enchantability;
-    private final LazyValue<Ingredient> repairMaterial;
+    private final int level;
+    private final int uses;
+    private final float speed;
+    private final float damage;
+    private final int enchantmentValue;
+    private final LazyValue<Ingredient> repairIngredient;
 
-    MOATItemTier(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Supplier<Ingredient> repairMaterial)
+    MOATItemTier(int level, int uses, float speed, float damage, int enchantmentValue, Supplier<Ingredient> repairIngredient)
     {
-        this.harvestLevel = harvestLevel;
-        this.maxUses = maxUses;
-        this.efficiency = efficiency;
-        this.attackDamage = attackDamage;
-        this.enchantability = enchantability;
-        this.repairMaterial = new LazyValue<>(repairMaterial);
+        this.level = level;
+        this.uses = uses;
+        this.speed = speed;
+        this.damage = damage;
+        this.enchantmentValue = enchantmentValue;
+        this.repairIngredient = new LazyValue<>(repairIngredient);
     }
 
     @Override
-    public int getMaxUses()
+    public int getUses()
     {
-        return maxUses;
+        return uses;
     }
 
     @Override
-    public float getEfficiency()
+    public float getSpeed()
     {
-        return efficiency;
+        return speed;
     }
 
     @Override
-    public float getAttackDamage()
+    public float getAttackDamageBonus()
     {
-        return attackDamage;
+        return damage;
     }
 
     @Override
-    public int getHarvestLevel()
+    public int getLevel()
     {
-        return harvestLevel;
+        return level;
     }
 
     @Override
-    public int getEnchantability()
+    public int getEnchantmentValue()
     {
-        return enchantability;
+        return enchantmentValue;
     }
 
     @Override
-    public Ingredient getRepairMaterial()
+    public Ingredient getRepairIngredient()
     {
-        return repairMaterial.getValue();
+        return repairIngredient.get();
     }
 }

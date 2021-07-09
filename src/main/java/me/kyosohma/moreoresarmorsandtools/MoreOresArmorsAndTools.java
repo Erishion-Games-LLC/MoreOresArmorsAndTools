@@ -20,7 +20,7 @@ public class MoreOresArmorsAndTools
     public static final ItemGroup TAB = new ItemGroup("moatTab")
     {
         @Override
-        public ItemStack createIcon()
+        public ItemStack makeIcon()
         {
             return new ItemStack(ItemInit.PLATINUM_INGOT.get());
         }

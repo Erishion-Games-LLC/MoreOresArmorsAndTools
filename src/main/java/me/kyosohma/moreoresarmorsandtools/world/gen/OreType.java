@@ -22,10 +22,10 @@ public enum OreType
     private final int maxHeight;
     private final int veinsPerChunk;
 
-    OreType(RegistryObject<Block> state, int veinSize, int minHeight, int maxHeight, int veinsPerChunk)
+    OreType(RegistryObject<Block> block, int veinSize, int minHeight, int maxHeight, int veinsPerChunk)
     {
-        this.state = () -> state.get().getDefaultState();
-        this.name = state.getId().getPath();
+        this.state = () -> block.get().defaultBlockState();
+        this.name = block.getId().getPath();
         this.veinSize = veinSize;
         this.minHeight = maxHeight;
         this.maxHeight = minHeight;

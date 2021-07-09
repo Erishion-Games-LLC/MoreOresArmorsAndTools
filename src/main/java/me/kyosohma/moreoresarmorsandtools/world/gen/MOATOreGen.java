@@ -42,10 +42,10 @@ public class MOATOreGen
 
     private static void addOreFeature(BiomeGenerationSettingsBuilder settings, BlockState state, int veinSize, int minHeight, int maxHeight, int veinsPerChunk)
     {
-        settings.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
-                Feature.ORE.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, state, veinSize))
-                        .withPlacement(Placement.RANGE.configure(new TopSolidRangeConfig(minHeight, 0, maxHeight)))
-                        .square()
+        settings.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
+                Feature.ORE.configured(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, state, veinSize))
+                        .decorated(Placement.RANGE.configured(new TopSolidRangeConfig(minHeight, 0, maxHeight)))
+                        .squared()
                         .count(veinsPerChunk));
     }
 }
