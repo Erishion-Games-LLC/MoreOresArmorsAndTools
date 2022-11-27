@@ -29,7 +29,7 @@
         "item": "moat:copper_boots"
       }
     ],
-    "result": "moat:copper_ingot",
+    "result": "moat:copper_nugget",
     "experience": 0.1,
     "cookingtime": 100
   }
